@@ -9,8 +9,8 @@ const MainBox = () => {
         <>
             <h1>{shop.name}</h1>
             <form>
-                <SelectBarber/>
-                <SelectService/>
+                <SelectBarber barbers={shop.staff}/>
+                <SelectService services={shop.services}/>
                 <AddServiceButton/>
             </form>
         </>

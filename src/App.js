@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import UnderConstruction from './components/UnderConstruction';
 
 function App() {
   return (
-    <h1>Hello</h1>
+    <UnderConstruction/>
   );
 }
 

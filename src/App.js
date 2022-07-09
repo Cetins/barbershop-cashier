@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import UnderConstruction from './components/UnderConstruction';
+import MainBox from './containers/MainBox';
 
 function App() {
   return (
-    <UnderConstruction/>
+    <MainBox/>
   );
 }
 

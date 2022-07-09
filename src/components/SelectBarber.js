@@ -1,13 +1,20 @@
 import React from "react";
 
-const SelectBarber = ({barbers}) => {
-    const barberOptions = barbers.map((barber) => {
-        return <option key={barber.id} value={barber}>{barber.name}</option>
+const SelectBarber = ({barbers, onBarberSelected}) => {
+
+    const handleChange = (event) => {
+        const chosenBarber = barbers[event.target.value];
+        onBarberSelected(chosenBarber);
+    }
+
+    const barberOptions = barbers.map((barber, index) => {
+        return <option key={barber.id} value={index}>{barber.name}</option>
     })
+
     return (
         <>
             <label>Select Barber</label>
-            <select>
+            <select defaultValue="" onChange={handleChange}>
                 {barberOptions}
             </select>
         </>

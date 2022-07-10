@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body {
+    background-color: #f1faee;
+}
+.main-box {
+    display: grid;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #1d3557;
+    margin: 1em;
+    padding: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin: 1em;
+    padding: 1em;
+    background-color: #457b9d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+    background-color: #ca6702;
+    border: none;
+    padding: 0 1em;
+    border-radius: .2em;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+    display: block;
+    align-self: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select {
+    background-color: #f1faee;
+    border: none;
+    color: #313131;
+    padding: .5em;
+    margin: 0 1em;
+    border-radius: .2em;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+.button-div {
+    background-color: #a8dadc;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    padding: 1em;
+    margin: 1em;
+}
+
+.staff-button {
+    background-color: #ca6702;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: .2em;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-align: center;
+    min-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #1d3557;
+    color: #ffffff;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #457b9d;
 }

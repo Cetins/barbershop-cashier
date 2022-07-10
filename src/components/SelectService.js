@@ -12,7 +12,7 @@ const SelectService = ({services, onServiceSelected}) => {
 
     return (
         <>
-            <label>Select Service</label>
+            <label>Service</label>
             <select defaultValue="" onChange={handleChange}>
                 {serviceOptions}
             </select>

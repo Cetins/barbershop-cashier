@@ -13,7 +13,7 @@ const SelectBarber = ({barbers, onBarberSelected}) => {
 
     return (
         <>
-            <label>Select Barber</label>
+            <label>Staff</label>
             <select defaultValue="" onChange={handleChange}>
                 {barberOptions}
             </select>

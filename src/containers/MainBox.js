@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import shop from "../data/ShopData";
+import Turnover from "../components/Turnover";
 import SelectBarber from "../components/SelectBarber";
 import SelectService from "../components/SelectService";
 import StaffButtons from "../components/StaffButtons";
@@ -46,18 +47,21 @@ const MainBox = () => {
 
     return (
         <div className="main-box">
-            <header>
-                <h1>&#128136; {shop.name}</h1>
-            </header>
-            <form>
-                <SelectBarber barbers={barbers} onBarberSelected={onBarberSelected}/>
-                <SelectService services={services} onServiceSelected={onServiceSelected}/>
-                <button onClick={handleClick}>Add</button>
-            </form>
-            <section>
-                <StaffButtons barbers={barbers} filterByStaff={filterByStaff}/>
+            <section className="column">
+                <h1 className="main-title">&#128136; {shop.name}</h1>
+                <article className="blue-container">
+                    <Turnover sales={sales}/>
+                </article>
+                <form className="blue-container">
+                    <SelectBarber barbers={barbers} onBarberSelected={onBarberSelected}/>
+                    <SelectService services={services} onServiceSelected={onServiceSelected}/>
+                    <button onClick={handleClick}>Add</button>
+                </form>
+                <article className="staff-button-article">
+                    <StaffButtons className="staff-button" barbers={barbers} filterByStaff={filterByStaff}/>
+                </article>
             </section>
-            <section>
+            <section className="column">
                 {filteredSales.length > 0 ? <StaffSales filteredSales={filteredSales}/> : null}
             </section>
         </div>

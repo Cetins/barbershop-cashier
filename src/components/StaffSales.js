@@ -10,7 +10,10 @@ const StaffSales = ({filteredSales}) => {
             </tr>
         )
     })
-    const sumDuration = filteredSales.reduce((total, sale) => total + sale.duration, 0);
+
+    const totalMinutes = filteredSales.reduce((total, sale) => total + sale.duration, 0);
+    const hours = Math.trunc(totalMinutes / 60)
+    const minutes = totalMinutes % 60
     const sumPrice = filteredSales.reduce((total, sale) => total + sale.price, 0);
 
     return (
@@ -29,7 +32,7 @@ const StaffSales = ({filteredSales}) => {
                 <tfoot>
                     <tr>
                         <th>{filteredSales.length} services</th>
-                        <th>{sumDuration} mins</th>
+                        <th>{hours}hours {minutes}mins</th>
                         <th>£ {sumPrice}</th>
                     </tr>
                 </tfoot>

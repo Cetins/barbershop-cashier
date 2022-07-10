@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/barbershop-cashier/static/css/main.073c9b0a.css",
-    "main.js": "/barbershop-cashier/static/js/main.2ed54f5a.js",
+    "main.css": "/barbershop-cashier/static/css/main.e7317abf.css",
+    "main.js": "/barbershop-cashier/static/js/main.1dea6aeb.js",
     "static/js/787.854a6673.chunk.js": "/barbershop-cashier/static/js/787.854a6673.chunk.js",
-    "static/media/under_construction.jpeg": "/barbershop-cashier/static/media/under_construction.bf0f8b06a5b0758b507c.jpeg",
     "index.html": "/barbershop-cashier/index.html",
-    "main.073c9b0a.css.map": "/barbershop-cashier/static/css/main.073c9b0a.css.map",
-    "main.2ed54f5a.js.map": "/barbershop-cashier/static/js/main.2ed54f5a.js.map",
+    "main.e7317abf.css.map": "/barbershop-cashier/static/css/main.e7317abf.css.map",
+    "main.1dea6aeb.js.map": "/barbershop-cashier/static/js/main.1dea6aeb.js.map",
     "787.854a6673.chunk.js.map": "/barbershop-cashier/static/js/787.854a6673.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.2ed54f5a.js"
+    "static/css/main.e7317abf.css",
+    "static/js/main.1dea6aeb.js"
   ]
 }
